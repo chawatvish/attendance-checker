@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: 'Sarabun', system-ui, sans-serif;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+}
+
+body {
+  font-family: 'Sarabun', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tailwind v4 content detection is automatic — no config file needed */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }

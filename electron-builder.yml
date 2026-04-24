@@ -1,0 +1,54 @@
+appId: com.attendancechecker.app
+productName: Attendance Checker
+copyright: Copyright © 2024
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - dist/**/*
+  - node_modules/**/*
+  - package.json
+
+extraResources:
+  - from: node_modules/better-sqlite3/build
+    to: better-sqlite3/build
+  - from: node_modules/pcsclite/build
+    to: pcsclite/build
+
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  icon: build/icon.ico
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+
+mac:
+  target:
+    - target: dmg
+      arch: [x64, arm64]
+  icon: build/icon.icns
+  category: public.app-category.productivity
+
+dmg:
+  title: Attendance Checker
+  contents:
+    - x: 410
+      y: 150
+      type: link
+      path: /Applications
+    - x: 130
+      y: 150
+      type: file
+
+linux:
+  target: AppImage
+  category: Office
+
+publish: null

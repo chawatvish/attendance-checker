@@ -1,0 +1,73 @@
+{
+  "name": "attendance-checker",
+  "version": "1.0.0",
+  "description": "Cross-platform attendance checker with Thai smart card reader",
+  "main": "dist/main/main/index.js",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "dev": "concurrently -k \"npm run dev:renderer\" \"npm run dev:main\"",
+    "dev:renderer": "vite",
+    "dev:main": "wait-on http://localhost:5173 && tsc -p tsconfig.main.json && cross-env NODE_ENV=development electron .",
+    "build": "npm run build:renderer && npm run build:main",
+    "build:renderer": "vite build",
+    "build:main": "tsc -p tsconfig.main.json",
+    "rebuild": "electron-rebuild -f -w better-sqlite3,pcsclite",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "pretest": "npm rebuild better-sqlite3 --update-binary 2>/dev/null; npm rebuild better-sqlite3",
+    "test": "jest",
+    "posttest": "electron-rebuild -f -w better-sqlite3,pcsclite",
+    "test:coverage": "npm run pretest && jest --coverage && npm run posttest"
+  },
+  "keywords": [
+    "attendance",
+    "smartcard",
+    "thai-id",
+    "electron"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@electron/rebuild": "^4.0.4",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "babel-jest": "^30.3.0",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^41.3.0",
+    "electron-builder": "^26.8.1",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.9",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10",
+    "wait-on": "^9.0.5"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/papaparse": "^5.5.2",
+    "autoprefixer": "^10.5.0",
+    "better-sqlite3": "^12.9.0",
+    "exceljs": "^4.4.0",
+    "i18next": "^26.0.7",
+    "iconv-lite": "^0.7.2",
+    "lucide-react": "^1.11.0",
+    "papaparse": "^5.5.3",
+    "pcsclite": "^1.0.1",
+    "postcss": "^8.5.10",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-i18next": "^17.0.4",
+    "react-router-dom": "^7.14.2",
+    "tailwindcss": "^4.2.4"
+  },
+  "overrides": {
+    "uuid": "^14.0.0"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "title": "โปรแกรมเช็คอิน",
+    "events": "กิจกรรม",
+    "checkin": "เช็คอิน",
+    "attendance": "รายชื่อผู้เข้าร่วม",
+    "select_event": "— เลือกกิจกรรม —"
+  },
+  "common": {
+    "confirm": "ยืนยัน",
+    "cancel": "ยกเลิก",
+    "close": "ปิด",
+    "save": "บันทึก",
+    "delete": "ลบ",
+    "import": "นำเข้า",
+    "export": "ส่งออก",
+    "search": "ค้นหา",
+    "loading": "กำลังโหลด...",
+    "error": "ข้อผิดพลาด",
+    "success": "สำเร็จ"
+  },
+  "events": {
+    "title": "กิจกรรม",
+    "create": "สร้างกิจกรรม",
+    "name": "ชื่อกิจกรรม",
+    "date": "วันที่",
+    "description": "รายละเอียด",
+    "no_events": "ยังไม่มีกิจกรรม กรุณาสร้างกิจกรรมใหม่",
+    "delete_confirm": "ลบกิจกรรมนี้? รายชื่อผู้เข้าร่วมและการเช็คอินทั้งหมดจะถูกลบด้วย",
+    "active": "กำลังใช้งาน",
+    "select": "เลือก",
+    "attendees_count": "{{count}} คน"
+  },
+  "checkin": {
+    "title": "เช็คอิน",
+    "no_event": "กรุณาเลือกกิจกรรมก่อน",
+    "insert_card": "เสียบบัตรประชาชนเพื่อเช็คอิน",
+    "manual_entry": "พิมพ์รหัส",
+    "manual_placeholder": "กรอกเลขบัตรประชาชน 13 หลัก",
+    "manual_submit": "ตรวจสอบ",
+    "reader_status": "เครื่องอ่าน: {{name}}",
+    "no_reader": "ไม่พบเครื่องอ่านบัตร",
+    "reading": "กำลังอ่านบัตร...",
+    "card_dipped": "ตรวจพบบัตร — กำลังอ่าน...",
+    "card_read": "บัตรอยู่ในเครื่อง — อ่านเสร็จแล้ว",
+    "card_not_dipped": "ยังไม่มีบัตร",
+    "popup": {
+      "approved": "อนุมัติ",
+      "duplicate": "เช็คอินแล้ว",
+      "not_found": "ไม่พบในรายชื่อ",
+      "name": "ชื่อ",
+      "id": "เลขบัตรประชาชน",
+      "dob": "วันเกิด",
+      "gender": "เพศ",
+      "religion": "ศาสนา",
+      "address": "ที่อยู่",
+      "expire_date": "บัตรหมดอายุ",
+      "checkin_at": "เช็คอินเมื่อ",
+      "confirm_checkin": "ยืนยันเช็คอิน",
+      "dismiss": "ปิด"
+    }
+  },
+  "attendance": {
+    "title": "รายชื่อผู้เข้าร่วม",
+    "no_event": "กรุณาเลือกกิจกรรมก่อน",
+    "registered_checkedin": "ลงทะเบียน เช็คอินแล้ว",
+    "total_registered": "ลงทะเบียนทั้งหมด",
+    "walk_in": "Walk-in",
+    "registered": "ลงทะเบียน",
+    "attendance_type": "ประเภท",
+    "walk_in_count": "{{count}} walk-in",
+    "percent": "เปอร์เซ็นต์",
+    "summary": "เช็คอินแล้ว {{checkedin}} / {{total}} คน",
+    "export_csv": "ส่งออก CSV",
+    "columns": {
+      "thai_id": "เลขบัตรประชาชน",
+      "full_name": "ชื่อ-นามสกุล",
+      "dob": "วันเกิด",
+      "checked_in_at": "เวลาเช็คอิน",
+      "method": "วิธี"
+    },
+    "method": {
+      "card": "บัตรประชาชน",
+      "manual": "พิมพ์รหัส"
+    },
+    "no_checkins": "ยังไม่มีการเช็คอิน"
+  },
+  "import": {
+    "title": "นำเข้ารายชื่อ",
+    "select_file": "เลือกไฟล์ CSV หรือ Excel",
+    "drop_here": "วางไฟล์ที่นี่หรือคลิกเพื่อเลือก",
+    "preview": "ตัวอย่าง (5 แถวแรก)",
+    "total_rows": "ทั้งหมด: {{count}} แถว",
+    "importing": "กำลังนำเข้า...",
+    "result": "นำเข้าแล้ว {{imported}} รายการ (ข้าม {{skipped}}, ข้อผิดพลาด {{errors}})"
+  }
+}

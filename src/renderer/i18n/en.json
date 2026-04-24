@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "title": "Attendance Check-in",
+    "events": "Events",
+    "checkin": "Check-in",
+    "attendance": "Attendance",
+    "select_event": "— Select event —"
+  },
+  "common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "delete": "Delete",
+    "import": "Import",
+    "export": "Export",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "events": {
+    "title": "Events",
+    "create": "Create Event",
+    "name": "Event Name",
+    "date": "Date",
+    "description": "Description",
+    "no_events": "No events yet. Create one to get started.",
+    "delete_confirm": "Delete this event? All attendees and check-ins will be removed.",
+    "active": "Active",
+    "select": "Select",
+    "attendees_count": "{{count}} attendees"
+  },
+  "checkin": {
+    "title": "Check-in",
+    "no_event": "Please select an event first",
+    "insert_card": "Insert smart card to check in",
+    "manual_entry": "Manual Entry",
+    "manual_placeholder": "Enter Thai ID (13 digits)",
+    "manual_submit": "Check",
+    "reader_status": "Reader: {{name}}",
+    "no_reader": "No smart card reader detected",
+    "reading": "Reading card...",
+    "card_dipped": "Card detected — reading...",
+    "card_read": "Card in reader — read complete",
+    "card_not_dipped": "No card inserted",
+    "popup": {
+      "approved": "Approved",
+      "duplicate": "Already Checked-in",
+      "not_found": "Not in List",
+      "name": "Name",
+      "id": "Thai ID",
+      "dob": "Date of Birth",
+      "gender": "Gender",
+      "religion": "Religion",
+      "address": "Address",
+      "expire_date": "Card Expires",
+      "checkin_at": "Checked-in at",
+      "confirm_checkin": "Confirm Check-in",
+      "dismiss": "Dismiss"
+    }
+  },
+  "attendance": {
+    "title": "Attendance",
+    "no_event": "Please select an event first",
+    "registered_checkedin": "Registered checked-in",
+    "total_registered": "Total registered",
+    "walk_in": "Walk-in",
+    "registered": "Registered",
+    "attendance_type": "Type",
+    "walk_in_count": "{{count}} walk-in(s)",
+    "percent": "Percentage",
+    "summary": "{{checkedin}} / {{total}} checked-in",
+    "export_csv": "Export CSV",
+    "columns": {
+      "thai_id": "Thai ID",
+      "full_name": "Full Name",
+      "dob": "Date of Birth",
+      "checked_in_at": "Check-in Time",
+      "method": "Method"
+    },
+    "method": {
+      "card": "Smart Card",
+      "manual": "Manual"
+    },
+    "no_checkins": "No check-ins yet"
+  },
+  "import": {
+    "title": "Import Attendees",
+    "select_file": "Select CSV or Excel file",
+    "drop_here": "Drop file here or click to browse",
+    "preview": "Preview (first 5 rows)",
+    "total_rows": "Total: {{count}} rows",
+    "importing": "Importing...",
+    "result": "Imported {{imported}} records ({{skipped}} skipped, {{errors}} errors)"
+  }
+}
